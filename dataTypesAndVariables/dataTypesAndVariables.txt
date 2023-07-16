@@ -1,0 +1,32 @@
+There are majorly two types of languages. 
+
+Statically typed language
+Dynamically typed languages
+
+
+
+Statically typed language: Where each variable and expression type is already known at compile time. Once a variable is declared to be of a certain data type, it cannot hold values of other data types.
+
+Example: C, C++, Java
+
+Dynamically typed language: These languages can receive different data types over time. In this type of language, we don’t need to specify whether the value in the variable is an integer, string, or any other data type like float, double, etc. The JavaScript Engine automatically understands the data type. We can re-assign any variable with any other value having another data type as given below.
+
+Example: Ruby, Python, JavaScript
+
+The latest ECMA Script (ES6) standard defines the following data types:
+Numbers:
+String:
+Boolean: Either True or False
+Null: This type has only one value: null. It is left intentionally so that it shows something that does not exist. 
+Undefined: A variable that has not been assigned a value is undefined.
+
+Symbol: 
+bigint:
+Object: It is the most important data-type and forms the building blocks for modern JavaScript.
+
+
+Variables in JavaScript: Variables in JavaScript are containers that hold reusable data. It is the basic unit of storage in a program.  
+
+The value stored in a variable can be changed during program execution.
+A variable is only a name given to a memory location, all the operations done on the variable effects that memory location.
+In JavaScript, all the variables must be declared before they can be used.

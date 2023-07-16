@@ -1,0 +1,6 @@
+In general, Computer Programs works by manipulating either numbers or texts.
+The Tpes are in general the different kinds of text or numbers that computer program classifes to manipulate in specific format.
+When a computer program needs to save data for future use those types are assigned into some values, Hint: Variables have names, and they allow use of
+those names in our programs to refer to values
+
+Overview and definition.
