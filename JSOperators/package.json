@@ -4,9 +4,16 @@
   "description": "",
   "main": "jsOperators.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", "start": "node deleteOperator.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel pipelineOperator.js --out-file output.js",
+    "start": "babel pipelineOperator.js --out-file output.js && node output.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.22.9",
+    "@babel/core": "^7.22.9",
+    "@babel/plugin-proposal-pipeline-operator": "^7.22.5"
+  }
 }
