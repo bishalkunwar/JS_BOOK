@@ -4,7 +4,7 @@
   "description": "",
   "main": "jsOperators.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1", "start": "node operatorTypes.js"
+    "test": "echo \"Error: no test specified\" && exit 1", "start": "node deleteOperator.js"
   },
   "keywords": [],
   "author": "",
