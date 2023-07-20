@@ -1,0 +1,25 @@
+{
+  "name": "JS_BOOK",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node loopsAndExamples.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bishalkunwar/JS_BOOK.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bishalkunwar/JS_BOOK/issues"
+  },
+  "homepage": "https://github.com/bishalkunwar/JS_BOOK#readme"
+}
