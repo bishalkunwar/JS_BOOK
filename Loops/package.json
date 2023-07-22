@@ -9,7 +9,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node loops7Examples.js"
+    "start": "node forLoopExplained.js"
   },
   "repository": {
     "type": "git",
