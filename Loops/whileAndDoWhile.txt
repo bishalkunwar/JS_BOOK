@@ -1,0 +1,18 @@
+The do-while loop executes the content of the loop once before checking the condition of the while loop.
+While the while loop will check the condition first before executing the content.
+
+while vs do-while loop
+
+It is an entry condition looping structure. 
+But. 
+It is an exit condition looping structure.
+
+The number of iterations depends on the condition mentioned in the while block.
+But
+Irrespective of the condition mentioned in the do-while block, there will a minimum of 1 iteration.
+
+The block control condition is available at the starting point of the loop.
+But
+The block control condition is available at the endpoint of the loop.
+
+Reference:- https://www.geeksforgeeks.org/javascript-while-loop/?ref=lbp
