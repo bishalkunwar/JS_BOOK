@@ -5,7 +5,7 @@
   "main": "basicObjectsExamples.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node objectConstructors.js"
+    "start": "node classes.js"
   },
   "keywords": [],
   "author": "",
