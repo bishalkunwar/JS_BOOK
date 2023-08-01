@@ -11,7 +11,6 @@ const prompt=require("prompt-sync")({sigint:true});
 
 const students = []   // an array to sote students details.
 
-
 const displayMenu = () => {
     
     console.log("------------------------------------------");
@@ -27,8 +26,58 @@ const displayMenu = () => {
 
 
 const addStudents = () => {
+    const student = {};
+    console.log("-------------------------------------------------------")
+    console.log("Let's welcome the new student and his/her marks details")
+    console.log("-------------------------------------------------------\n")
+    student.ID = prompt("Enter the Student ID...")
+    student.firstName = prompt("Enter the First Name...")
+    student.lastName = prompt("Enter the Last Name...")
+    student.email = prompt("Enter the Student Email:...")
+    student.phoneNumber = prompt("Enter the Student Phone Number:...")
 
 
+    student.markSheet = [];
+
+    const subjectNumbers = parseInt(prompt("Enter the number of subjects (max 6 subjects )"));
+    if (subjectNumbers <= 0 || subjectNumbers >6){
+        console.log("Sorry, one student can have minimum 1 and maximum 6 subjects.")
+        return
+    };
+
+    let totalCredit = 0;
+    for(let x = 0; x<subjectNumbers; x++){
+       const subject = prompt(`Enter the ${x+1}: Subject Name`);
+       const totalMark = prompt(`Enter the ${subject} total mark`);
+       const credit = prompt((`Enter the credit holded by ${subject}\n`));
+       
+       if( credit <= 0 || credit >= 7){
+        console.log("Invalid Credit, must be between 1 to 6,....");
+        return;
+        }
+
+        let obtainedMarks = parseFloat(prompt(`Marks got by ${student.firstName} ${student.lastName} in ${subject}:... `));
+
+        if(obtainedMarks > totalMark || obtainedMarks < 0){
+            console.log("Invalid marks, please enter the valid marks ");
+            return;
+        };
+
+        totalCredit += credit;
+        const marksDetails = {subject, obtainedMarks, totalMark, totalCredit};
+        student.markSheet.push(marksDetails);
+    };
+
+    if(totalCredit > 36){
+        console.log("Total credit exceeds the maximum limit of 36.");
+    };
+
+    student.totalCredit = totalCredit;
+    student.totalMark = student.markSheet.reduce((total, marks)=>total+marks.totalMark, 0);
+    // student.averageMark = calculateAverageScore(student.marksheet);
+
+    students.push(student);
+    console.log(students);
 };
 
 
