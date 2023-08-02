@@ -77,16 +77,25 @@ const addStudents = () => {
     // student.averageMark = calculateAverageScore(student.marksheet);
 
     students.push(student);
-    console.log(students);
+    // console.log(students);
 };
 
 
 const listStudents = () => {
-
+    for(const student of students){
+        console.log(`ID: ${student.ID} Name: ${student.firstName} ${student.lastName} Email: ${student.email}`);
+    };
 }; 
 
-const displayStudentDetail = () => {
 
+const displayStudentDetail = (student) => {
+    console.log(`ID: ${student.ID} Name: ${student.firstName} ${student.lastName} Email: ${student.email}`);
+    console.log("Marks Details: ");
+    for(const marks of student.markSheet){
+        const percentage = (marks.obtainedMarks/marks.totalMark)*100;
+        console.log(`Subject: ${marks.subject}, Marks Obtained: ${marks.obtainedMarks}, Total Marks: ${marks.totalMark}, Credit: ${marks.credit}, Percentage: ${percentage.toFixed(2)}% `);
+
+    };
 };
 
 
@@ -97,6 +106,10 @@ const editStudents = () => {
 
 const removeStudents = () => {
 
+};
+
+const findStudentByID = (ID) => {
+    return students.find(student => student.ID === ID);
 };
 
 const main = () => {
@@ -116,9 +129,9 @@ const main = () => {
             listStudents();
             const studentId = prompt("Enter Student ID to view the details or press zero 0 to exit.");
             if(studentId !== "0"){
-                const studentDetail = findstdbyID(studentId); // change and manipulate findById method()
+                const studentDetail = findStudentByID(studentId); // change and manipulate findById method()
                 if(studentDetail){
-                    displayStudentDetail();
+                    displayStudentDetail(studentDetail);
                 }else{
                     console.log(" Student with this ID do not exist, Sorry!");
                 }
