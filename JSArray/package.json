@@ -1,0 +1,13 @@
+{
+  "name": "jsarray",
+  "version": "1.0.0",
+  "description": "",
+  "main": "arrayInJS.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node forEachFunctionTry.js "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
