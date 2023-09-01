@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>function overriding example</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body style="text-align: center;">
+
+        <h1 style="color: green;" id="h1">This is a function overriding example</h1>
+        <p id="callUp" style="font-size: 15px; font-weight: bold;"></p>
+
+        <button onclick="callFun()">click here</button>
+
+        <p id="callDown" style="color: green; font-size: 20px; font-weight: bold; border: black;"></p>
+
+        <script>
+            var up =  document.getElementById('callUp');
+            up.innerHTML = "Click the button to override the function"
+
+            var down = document.getElementById('callDown');
+
+            function funny(){
+                return "This statement is from old function."
+            };
+
+            down.innerHTML = funny();
+
+            function callFun(){
+                var newFun = funny;
+                funny = function(){
+                    return "This is from overridden function."
+                };
+
+                down.innerHTML = funny(); 
+
+            };
+
+        </script>
+    </body>
+</html>
