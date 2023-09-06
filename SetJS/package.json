@@ -1,0 +1,13 @@
+{
+  "name": "setjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "basicSet.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node setMethods.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
