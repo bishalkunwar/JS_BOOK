@@ -110,10 +110,30 @@ familyDetails.forEach(print);
 const keySort = new Map([...familyDetails].sort((a,b)=>String(a[0]).localeCompare(b[0])));
 console.log(keySort);
 
-const descKey = new Map([...familyDetails.entries()].sort(describe('first', () => { second })));
-console.log(descKey);
+
+result = []
+len = familyDetails.length;
+for (let j = len-1; j >=0; j--){
+    result.push(familyDetails[j]);
+};
+
+console.log(result);
 
 
 // sort based on values.
 const valueSort = new Map([...familyDetails].sort((a,b)=>String(a[1]).localeCompare(b[1])));
 console.log(valueSort); 
+
+
+
+
+// Creating an empty map
+const myMap = new Map();
+ 
+// Creating a set by inserting the key-value pair
+console.log(myMap);
+ 
+myMap.set("info", { name: "Sam", age: 36 });
+ 
+// Access the elements of a Map
+console.log(myMap);
