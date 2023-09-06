@@ -1,0 +1,13 @@
+{
+  "name": "mapjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "basicMap.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node basicMap.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
