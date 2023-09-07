@@ -1,0 +1,7 @@
+
+-- Map is a collection of key-value whereas set is a collection of unique elements.
+
+-- Map is two-dimensional whereas set is one-dimensional.
+
+-- values are accessed using keys whereas in-built methods are used to access values.
+
