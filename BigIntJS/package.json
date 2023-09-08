@@ -1,0 +1,13 @@
+{
+  "name": "bigintjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bigInt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bigInt.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
